@@ -1,0 +1,23 @@
+package com.kce.e_bus_fare_payment.dao;
+
+import java.sql.Connection;
+import java.util.*;
+import com.kce.e_bus_fare_payment.bean.BankAccount;
+import com.kce.e_bus_fare_payment.util.*;
+
+public class BankAccountDAO extends BankAccount{
+	public static void addBankAccount(){
+		Scanner sc=new Scanner(System.in);
+		Connection con=DBUtil.getDBConnection();
+		
+		System.out.println("Enter Account number:");
+		String acc_no=sc.nextLine();
+		System.out.println("Enter Account Holder name:");
+		String acc_holder_name=sc.nextLine();
+		System.out.println("Enter mobile number:");
+		String mobile_no=sc.nextLine();
+		int balance=10000;
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.kce.e_bus_fare_payment.service;
+
+public class AddBankAccountToWallet {
+
+}

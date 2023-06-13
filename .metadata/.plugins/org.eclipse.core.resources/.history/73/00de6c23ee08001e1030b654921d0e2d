@@ -1,0 +1,56 @@
+package com.kce.e_bus_fare_payment.bean;
+
+public class BankAccount {
+	
+	private String account_no;
+	private String account_holder_name;
+	private String mobile_no;
+	private int balance;
+	
+	public BankAccount() {
+		super();
+	}
+
+	public BankAccount(String account_no, String account_holder_name, String mobile_no, int balance) {
+		super();
+		this.account_no = account_no;
+		this.account_holder_name = account_holder_name;
+		this.mobile_no = mobile_no;
+		this.balance = balance;
+	}
+
+	public String getAccount_no() {
+		return account_no;
+	}
+
+	public void setAccount_no(String account_no) {
+		this.account_no = account_no;
+	}
+
+	public String getAccount_holder_name() {
+		return account_holder_name;
+	}
+
+	public void setAccount_holder_name(String account_holder_name) {
+		this.account_holder_name = account_holder_name;
+	}
+
+	public String getMobile_no() {
+		return mobile_no;
+	}
+
+	public void setMobile_no(String mobile_no) {
+		this.mobile_no = mobile_no;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+	
+	
+	
+}

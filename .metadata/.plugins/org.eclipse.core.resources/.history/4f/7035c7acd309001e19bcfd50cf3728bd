@@ -1,0 +1,18 @@
+package com.kce.e_bus_fare_payment.dao;
+
+import com.kce.e_bus_fare_payment.bean.Wallet;
+import com.kce.e_bus_fare_payment.util.*;
+import java.sql.*;
+
+public class WalletDAO extends Wallet{
+	Wallet wt=new Wallet();
+	Connection con=DBUtil.getDBConnection();
+	public void activateWallet(){
+		wt.setWalletId(1001);
+		wt.setWalletBalance(0);
+		
+		System.out.println("Wallet Activated Succcessfully!");
+	}
+	
+
+}

@@ -1,0 +1,8 @@
+package com.kce.e_bus_fare_payment.dao;
+
+import com.kce.e_bus_fare_payment.bean.Wallet;
+
+public class WalletDAO extends Wallet{
+	
+
+}

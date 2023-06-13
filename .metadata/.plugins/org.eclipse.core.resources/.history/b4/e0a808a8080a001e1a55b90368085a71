@@ -1,0 +1,12 @@
+package com.kce.e_bus_fare_payment.dao;
+
+import com.kce.e_bus_fare_payment.bean.Payment;
+import java.util.*;
+import java.sql.*;
+
+public class PaymentDAO extends Payment{
+	public static void payBusFare() {
+		
+	}
+
+}

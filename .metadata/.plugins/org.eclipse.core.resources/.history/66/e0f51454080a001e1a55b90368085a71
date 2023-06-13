@@ -1,0 +1,13 @@
+package com.kce.e_bus_fare_payment.service;
+
+import com.kce.e_bus_fare_payment.bean.*;
+
+public class AddMoneyToWallet {
+	public static void addMoneyToWallet() {
+		Wallet wt=new Wallet();
+		BankAccount ba=new BankAccount();
+		
+		
+	}
+
+}

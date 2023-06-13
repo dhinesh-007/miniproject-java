@@ -1,0 +1,23 @@
+package com.kce.e_bus_fare_payment.dao;
+
+import com.kce.e_bus_fare_payment.bean.Wallet;
+import com.kce.e_bus_fare_payment.util.*;
+import java.sql.*;
+
+public class WalletDAO extends Wallet{
+	
+	public void activateWallet()throws Exception{
+		
+		Connection con=DBUtil.getDBConnection();
+		PreparedStatement pst=con.prepareStatement("insert into wallet values(null,?,?)");
+		setWalletId(1001);
+		setWalletBalance(0);
+		pst.setInt(1,getWalletId());
+		pst.setInt(2,getWalletBalance());
+		pst.executeUpdate();
+		System.out.println("Wallet Activated Succcessfully!");
+		
+	}
+	
+
+}

@@ -1,0 +1,14 @@
+package com.kce.e_bus_fare_payment.util;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DBUtil {
+	public static Connection getDBConnection(){
+		final String url="jdbc:mysql://localhost/";
+		final String username="admin";
+		final String password="dhinesh2004";
+		Connection con=DriverManager.getConnection(url,username,password);
+	}
+
+}
